@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Membrane MC</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <!-- NAVBAR -->
+
+    <header>
+
+      <div class="logo">
+        MEMBRANE
+      </div>
+
+      <nav>
+
+        <a href="#">Home</a>
+        <a href="store.html">Store</a>
+        <a href="ranks.html">Ranks</a>
+        <a href="support.html">Support</a>
+
+      </nav>
+
+      <button class="nav-btn">
+        Purchase
+      </button>
+
+    </header>
+
+    <!-- CONTENT -->
+
+    <div class="hero-content">
+
+      <div class="text-box">
+
+        <h1>
+          <span class="light">MEMBRANE</span>
+          <span class="dark">MC</span>
+        </h1>
+
+        <p>
+          A modern Minecraft network with custom ranks,
+          cosmetics, events, and premium gameplay.
+        </p>
+
+        <div class="buttons">
+
+          <button class="primary-btn" onclick="openPopup()">
+            PLAY NOW
+          </button>
+
+          <a href="https://discord.gg/JqkdVt7CeT" target="_blank">
+
+            <button class="secondary-btn">
+              JOIN DISCORD
+            </button>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- POPUP -->
+
+  <div class="popup" id="popup">
+
+    <div class="popup-box">
+
+      <span class="close-btn" onclick="closePopup()">
+        ✕
+      </span>
+
+      <h2>MEMBRANE MC</h2>
+
+      <p class="server-ip">
+        membranemc.fun
+      </p>
+
+      <div class="season-box">
+
+        <h3>THIS SEASON: INFUSE x LIFESTEAL</h3>
+
+        <ul>
+
+  <li>🩸 LifestealxInfuse 💎</li>
+  <li>👑 Events</li>
+  <li>⚔ PvP</li>
+
+</ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SCRIPT -->
+
+  <script>
+
+    function openPopup(){
+
+        document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup(){
+
+        document.getElementById("popup").style.display = "none";
+    }
+
+  </script>
+
+</body>
+</html>
