@@ -28,7 +28,7 @@ body{
 
 .particles{
 
-    position:absolute;
+    position:fixed;
     inset:0;
 
     background:
@@ -39,6 +39,8 @@ body{
     opacity:0.08;
 
     animation:moveParticles 40s linear infinite;
+
+    z-index:0;
 }
 
 /* MAIN */
@@ -56,7 +58,7 @@ body{
     position:relative;
     z-index:2;
 
-    padding:50px 20px;
+    padding:60px 20px;
 }
 
 /* BOX */
@@ -64,6 +66,8 @@ body{
 .support-box{
 
     width:760px;
+
+    max-width:100%;
 
     padding:60px;
 
@@ -125,6 +129,8 @@ h1{
     -webkit-text-fill-color:transparent;
 
     animation:pulse 3s infinite alternate;
+
+    word-break:break-word;
 }
 
 /* TEXT */
@@ -148,6 +154,8 @@ h1{
     gap:18px;
 
     margin-top:40px;
+
+    flex-wrap:wrap;
 }
 
 .buttons a{
@@ -158,7 +166,7 @@ h1{
 .primary-btn,
 .secondary-btn{
 
-    height:56px;
+    min-height:56px;
 
     padding:0 34px;
 
@@ -327,26 +335,154 @@ h1{
     }
 }
 
+/* TABLET */
+
+@media(max-width:1024px){
+
+    h1{
+
+        font-size:4.2rem;
+    }
+
+    .support-box{
+
+        padding:50px 35px;
+    }
+
+}
+
 /* MOBILE */
 
-@media(max-width:800px){
+@media(max-width:768px){
+
+    .support{
+
+        padding:40px 15px;
+    }
 
     .support-box{
 
         width:100%;
 
-        padding:40px 25px;
+        padding:40px 24px;
+
+        border-radius:22px;
+    }
+
+    .badge{
+
+        font-size:0.75rem;
+
+        padding:10px 18px;
+
+        margin-bottom:28px;
     }
 
     h1{
 
-        font-size:3.5rem;
+        font-size:3rem;
+
+        line-height:1;
+
+        letter-spacing:-2px;
+    }
+
+    .support-box p{
+
+        font-size:1rem;
+
+        line-height:1.7;
     }
 
     .buttons{
 
         flex-direction:column;
+
         align-items:center;
+
+        gap:14px;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+
+        width:100%;
+
+        max-width:320px;
+    }
+
+    .faq-section{
+
+        margin-top:45px;
+    }
+
+    .faq-section h2{
+
+        font-size:1.3rem;
+    }
+
+    .faq-item{
+
+        padding:18px;
+    }
+
+    .faq-item h3{
+
+        font-size:1rem;
+    }
+
+    .faq-item p{
+
+        font-size:0.92rem;
+
+        line-height:1.6;
+    }
+
+}
+
+/* EXTRA SMALL DEVICES */
+
+@media(max-width:480px){
+
+    h1{
+
+        font-size:2.3rem;
+    }
+
+    .support-box{
+
+        padding:30px 18px;
+    }
+
+    .support-box p{
+
+        font-size:0.95rem;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+
+        font-size:0.9rem;
+    }
+
+    .faq-section h2{
+
+        font-size:1.15rem;
+    }
+
+    .faq-item{
+
+        padding:16px;
+    }
+
+    .faq-item h3{
+
+        font-size:0.95rem;
+    }
+
+    .faq-item p{
+
+        font-size:0.88rem;
     }
 
 }
