@@ -80,6 +80,8 @@ nav{
     gap:45px;
 
     align-items:center;
+
+    flex-wrap:wrap;
 }
 
 nav a{
