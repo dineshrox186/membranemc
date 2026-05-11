@@ -577,3 +577,6 @@ nav .active::after{
     }
 
 }
+*{
+    -webkit-tap-highlight-color: transparent;
+}
